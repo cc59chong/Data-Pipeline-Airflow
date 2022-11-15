@@ -9,19 +9,19 @@ Song data: s3://udacity-dend/song_data
 ```
 ## Structure
 ```
-└───airflow                      # Airflow home
+└───airflow                      
 |   |               
-│   └───dags                     # Jupyter notebooks
-│   |   │ s3_to_redshift_dag.py  # DAG definition
+│   └───dags                     
+│   |   │ udac_example_dag.py    # contains the tasks and dependencies of the DAG. 
 |   |   |
 |   └───plugins
 │       │  
 |       └───helpers
-|       |   | sql_queries.py     # The SQL queries used by create_tables.py in creating DB.
+|       |   | sql_queries.py     # contains the SQL queries that is used by create_tables.py in creating DB.
 |       |
 |       └───operators
-|       |   | data_quality.py    # DataQualityOperator
-|       |   | load_dimension.py  # LoadDimensionOperator
-|       |   | load_fact.py       # LoadFactOperator
-|       |   | stage_redshift.py  # StageToRedshiftOperator
+|       |   | stage_redshift.py  # contains StageToRedshiftOperator that copies JSON data from AWS S3 to staging tables in the AWS Redshift. 
+|       |   | load_dimension.py  # contains LoadDimensionOperator that loads a dimension table from data in the staging table(s).
+|       |   | load_fact.py       # contains LoadFactOperator that loads a fact table from data in the staging table(s).
+|       |   | data_quality.py    # contains DataQualityOperator that is used to run checks on the data itself.
 ```
