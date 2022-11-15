@@ -7,7 +7,7 @@ Here are the s3 links for each:
 Log data: s3://udacity-dend/log_data
 Song data: s3://udacity-dend/song_data
 ```
-## Structure
+## Project Structure
 ```
 └───airflow                      
 |   |               
