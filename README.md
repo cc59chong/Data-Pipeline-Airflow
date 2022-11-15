@@ -8,7 +8,7 @@ Log data: s3://udacity-dend/log_data
 Song data: s3://udacity-dend/song_data
 ```
 ## Structure
-```
+
 └───airflow                      # Airflow home
 |   |               
 │   └───dags                     # Jupyter notebooks
@@ -24,4 +24,4 @@ Song data: s3://udacity-dend/song_data
 |       |   | load_dimension.py  # LoadDimensionOperator
 |       |   | load_fact.py       # LoadFactOperator
 |       |   | stage_redshift.py  # StageToRedshiftOperator
-```
+
