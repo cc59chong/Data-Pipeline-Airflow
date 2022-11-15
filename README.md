@@ -17,7 +17,7 @@ Song data: s3://udacity-dend/song_data
 |   └───plugins
 │       │  
 |       └───helpers
-|       |   | ```sql_queries.py```    # The SQL queries used by **create_tables.py** in creating DB.
+|       |   | sql_queries.py   # The SQL queries used by # create_tables.py in creating DB.
 |       |
 |       └───operators
 |       |   | data_quality.py    # DataQualityOperator
