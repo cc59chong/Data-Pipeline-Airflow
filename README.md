@@ -15,13 +15,15 @@ Song data: s3://udacity-dend/song_data
 │   |   │ udac_example_dag.py    # contains the tasks and dependencies of the DAG. 
 |   |   |
 |   └───plugins
-│       │  
-|       └───helpers
-|       |   | sql_queries.py     # contains the SQL queries that is used by create_tables.py in creating DB.
-|       |
-|       └───operators
-|       |   | stage_redshift.py  # contains StageToRedshiftOperator that copies JSON data from AWS S3 to staging tables in the AWS Redshift. 
-|       |   | load_dimension.py  # contains LoadDimensionOperator that loads a dimension table from data in the staging table(s).
-|       |   | load_fact.py       # contains LoadFactOperator that loads a fact table from data in the staging table(s).
-|       |   | data_quality.py    # contains DataQualityOperator that is used to run checks on the data itself.
+│   |   │  
+|   |   └───helpers
+|   |   |   | sql_queries.py     # contains the SQL queries that is used in the ETL process.
+|   |   |
+|   |   └───operators
+|   |   |   | stage_redshift.py  # contains StageToRedshiftOperator that copies JSON data from AWS S3 to staging tables in the AWS Redshift. 
+|   |   |   | load_dimension.py  # contains LoadDimensionOperator that loads a dimension table from data in the staging table(s).
+|   |   |   | load_fact.py       # contains LoadFactOperator that loads a fact table from data in the staging table(s).
+|   |   |   | data_quality.py    # contains DataQualityOperator that is used to run checks on the data itself.
+|   |   |
+|   └───create_tables.sql        # contains the SQL queries used to create all the required tables in Redshift.
 ```
