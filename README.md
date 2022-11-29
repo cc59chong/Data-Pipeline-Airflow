@@ -27,3 +27,8 @@ Song data: s3://udacity-dend/song_data
 |   |   |
 |   └───create_tables.sql        # contains the SQL queries used to create all the required tables in Redshift.
 ```
+## How to Run
+1. Create a Redshift cluster on your AWS account
+2. Turn on Airflow by running Airflow/start.sh
+3. Create AWS and Redshift connections on Airflow Web UI
+4. Run udac_example _dag DAG to create tables on Redshift and trigger ETL data pipeline
