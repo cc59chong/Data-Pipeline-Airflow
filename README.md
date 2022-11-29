@@ -37,8 +37,17 @@ Song data: s3://udacity-dend/song_data
 2. Click on the **Admin** tab and select **Connections**.
 3. Under **Connections**, select **Create**.
 4. On the create connection page, enter the following values:
-   * **Conn Id**: Enter aws_credentials.
-   * **Conn Type**: Enter Amazon Web Services.
+   * **Conn Id**: Enter ```aws_credentials```.
+   * **Conn Type**: Enter ```Amazon Web Services```.
    * **Login**: Enter your **Access key ID** from the IAM User credentials you downloaded earlier.
    * **Password**: Enter your **Secret access key** from the IAM User credentials you downloaded earlier.
 select **Save and Add Another**.
+5. On the next create connection page, enter the following values:
+Conn Id: Enter redshift.
+Conn Type: Enter Postgres.
+Host: Enter the endpoint of your Redshift cluster, excluding the port at the end. You can find this by selecting your cluster in the Clusters page of the Amazon Redshift console. See where this is located in the screenshot below. IMPORTANT: Make sure to NOT include the port at the end of the Redshift endpoint string.
+Schema: Enter dev. This is the Redshift database you want to connect to.
+Login: Enter awsuser.
+Password: Enter the password you created when launching your Redshift cluster.
+Port: Enter 5439.
+Once you've entered these values, select Save.
