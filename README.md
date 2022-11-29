@@ -36,7 +36,7 @@ Song data: s3://udacity-dend/song_data
 1. To go to the Airflow UI: run Airflow locally, open http://localhost:8080 in Google Chrome (other browsers occasionally have issues rendering the Airflow UI).
 2. Click on the **Admin** tab and select **Connections**.
 ![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/admin-connections.png)<br>
-3. Under **Connections**, select **Create**.
+3. Under **Connections**, select **Create**.<br>
 ![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/create-connection.png)<br>
 4. On the create connection page, enter the following values:
    * **Conn Id**: Enter ```aws_credentials```.
