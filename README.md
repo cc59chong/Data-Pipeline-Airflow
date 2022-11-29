@@ -32,3 +32,13 @@ Song data: s3://udacity-dend/song_data
 2. Turn on Airflow by running Airflow/start.sh
 3. Create AWS and Redshift connections on Airflow Web UI
 4. Run udac_example _dag DAG to create tables on Redshift and trigger ETL data pipeline
+## Airflow Data Pipeline
+1. To go to the Airflow UI: run Airflow locally, open http://localhost:8080 in Google Chrome (other browsers occasionally have issues rendering the Airflow UI).
+2. Click on the Admin tab and select Connections.
+3. Under Connections, select Create.
+4. On the create connection page, enter the following values:
+* Conn Id: Enter aws_credentials.
+Conn Type: Enter Amazon Web Services.
+Login: Enter your Access key ID from the IAM User credentials you downloaded earlier.
+Password: Enter your Secret access key from the IAM User credentials you downloaded earlier.
+Once you've entered these values, select Save and Add Another.
