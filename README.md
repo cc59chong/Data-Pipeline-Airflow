@@ -35,13 +35,16 @@ Song data: s3://udacity-dend/song_data
 ## Airflow Data Pipeline
 1. To go to the Airflow UI: run Airflow locally, open http://localhost:8080 in Google Chrome (other browsers occasionally have issues rendering the Airflow UI).
 2. Click on the **Admin** tab and select **Connections**.
+![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/admin-connections.png)<br>
 3. Under **Connections**, select **Create**.
+![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/create-connection.png)<br>
 4. On the create connection page, enter the following values:
    * **Conn Id**: Enter ```aws_credentials```.
    * **Conn Type**: Enter ```Amazon Web Services```.
    * **Login**: Enter your **Access key ID** from the IAM User credentials you downloaded earlier.
    * **Password**: Enter your **Secret access key** from the IAM User credentials you downloaded earlier.
 select **Save and Add Another**.
+![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/connection-aws-credentials.png)<br>
 5. On the next create connection page, enter the following values:
    * **Conn Id**: Enter ```redshift```.
    * **Conn Type**: Enter ```Postgres```.
@@ -51,3 +54,8 @@ select **Save and Add Another**.
    * **Password**: Enter the password you created when launching your Redshift cluster.
    * **Port**: Enter ```5439```.
 select **Save**.
+![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/cluster-details.png)<br>
+![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/connection-redshift.png)<br>
+## ETL Process in Airflow UI
+![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/Working%20DAG%20with%20correct%20task%20dependencies.png)<br>
+
