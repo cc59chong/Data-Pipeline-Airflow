@@ -66,7 +66,7 @@ class StageToRedshiftOperator(BaseOperator):
             self.table,
             s3_path,
             credentials.access_key,
-            credentials.secrect_key,
+            credentials.secret_key,
             self.region,
             self.json
         )
