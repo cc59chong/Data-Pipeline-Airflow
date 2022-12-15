@@ -58,4 +58,4 @@ select **Save**.
 ![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/connection-redshift.png)<br>
 ## ETL Process in Airflow UI
 ![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/Working%20DAG%20with%20correct%20task%20dependencies.png)<br>
-
+![image](https://github.com/cc59chong/Data-Pipeline-Airflow/blob/main/images/airflow-pipelines.JPG)<br>
